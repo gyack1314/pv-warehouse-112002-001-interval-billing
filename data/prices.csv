@@ -1,0 +1,10 @@
+wave,point,start,direction,rev,status,yuan_per_mwh
+1,N4,2026-11-01T01:45:00-04:00,import,1,final,85
+1,N4,2026-11-01T01:45:00-04:00,export,1,final,-10
+1,N4,2026-11-01T01:00:00-05:00,import,1,final,92
+1,N4,2026-11-01T01:00:00-05:00,export,1,final,-15
+1,N4,2026-11-01T01:05:00-05:00,import,1,final,92
+1,N4,2026-11-01T01:05:00-05:00,export,1,estimated,100
+2,N4,2026-11-01T01:05:00-05:00,export,2,final,105
+3,N4,2026-11-01T01:05:00-05:00,export,3,final,121
+6,N4,2026-11-01T01:05:00-05:00,export,4,final,125

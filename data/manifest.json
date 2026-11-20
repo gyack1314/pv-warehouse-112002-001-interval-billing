@@ -1,0 +1,91 @@
+{
+  "pack": "interval-billing",
+  "tables": {
+    "market_calendar": {
+      "columns": [
+        "point",
+        "period",
+        "start",
+        "end",
+        "minutes"
+      ],
+      "rows": 2,
+      "sha256": "cae30c82a3b57d07e619b21ae8bc0818efaeec3d2199f01e6f191317965f0708"
+    },
+    "meter_registers": {
+      "columns": [
+        "wave",
+        "meter",
+        "direction",
+        "at",
+        "kwh",
+        "rev"
+      ],
+      "rows": 11,
+      "sha256": "aa8fc550c85db6dc38a37b61b55eacf73ed56f87b6f34a277912dbaa5b302963"
+    },
+    "interval_proof": {
+      "columns": [
+        "wave",
+        "meter",
+        "start",
+        "end",
+        "kwh",
+        "rev"
+      ],
+      "rows": 2,
+      "sha256": "345f269e5432bb4f3400ab814274a0d3afb4eea64d7196977702ae044d66365a"
+    },
+    "meter_authority": {
+      "columns": [
+        "wave",
+        "point",
+        "direction",
+        "start",
+        "end",
+        "meter",
+        "kind",
+        "preceding_meter"
+      ],
+      "rows": 3,
+      "sha256": "37ba7d4c6417a388356efd16f4c35961fddae3eae6e72922011ba85b3917953d"
+    },
+    "prices": {
+      "columns": [
+        "wave",
+        "point",
+        "start",
+        "direction",
+        "rev",
+        "status",
+        "yuan_per_mwh"
+      ],
+      "rows": 9,
+      "sha256": "36bac901fca86e99b9fc97de0fdce3a382c8252e25ee4e8b2693dd0345fb3895"
+    },
+    "ledger_receipts": {
+      "columns": [
+        "wave",
+        "receipt",
+        "dispatch_alias",
+        "decision"
+      ],
+      "rows": 4,
+      "sha256": "035ef05819fcab6b45fdb7be0f293a9d014ccdefa6d723f1df6c105ab79ed481"
+    }
+  },
+  "references": [
+    [
+      "interval_proof",
+      "meter",
+      "meter_registers",
+      "meter"
+    ],
+    [
+      "meter_authority",
+      "point",
+      "market_calendar",
+      "point"
+    ]
+  ]
+}

@@ -1,0 +1,5 @@
+wave,receipt,dispatch_alias,decision
+4,ACK-01,A,accept
+4,ACK-01,A,accept
+6,ACK-02,B,reject
+7,ACK-03,C,accept

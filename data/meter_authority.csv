@@ -1,0 +1,4 @@
+wave,point,direction,start,end,meter,kind,preceding_meter
+1,N4,import,2026-11-01T01:45:00-04:00,2026-11-01T01:10:00-05:00,N4-I,main,
+1,N4,export,2026-11-01T01:45:00-04:00,2026-11-01T01:05:00-05:00,N4-O,main,
+2,N4,export,2026-11-01T01:05:00-05:00,2026-11-01T01:10:00-05:00,N4-X,authorized_replacement,N4-O
